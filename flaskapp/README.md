@@ -16,3 +16,6 @@ flask run
 
 [5] - Ejecutar el servidor de React (npm start).
 
+
+ya se creo el proyecto y la rama octa01
+
