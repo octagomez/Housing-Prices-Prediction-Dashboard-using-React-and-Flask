@@ -19,6 +19,10 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
+    
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 @app.route('/prediction', methods=['POST'])
